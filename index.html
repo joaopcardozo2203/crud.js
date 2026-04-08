@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Camisas - CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Camisas</h1>
+        
+        <form id="camisaForm">
+            <input type="hidden" id="camisaId">
+            <input type="text" id="modelo" placeholder="Modelo (ex: Polo)" required>
+            <input type="text" id="cor" placeholder="Cor" required>
+            <input type="text" id="tamanho" placeholder="Tamanho (P, M, G)" required>
+            <input type="text" id="marca" placeholder="Marca" required>
+            <button type="submit" id="btnSalvar">Salvar Camisa</button>
+        </form>
+
+        <ul id="listaCamisas"></ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
